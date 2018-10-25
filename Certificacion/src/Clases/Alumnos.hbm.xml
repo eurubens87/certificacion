@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/10/2018 01:21:40 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Clases.Alumnos" table="alumnos" catalog="111mil" optimistic-lock="version">
+        <id name="dni" type="string">
+            <column name="DNI" length="8" />
+            <generator class="assigned" />
+        </id>
+        <property name="apellido" type="string">
+            <column name="Apellido" length="45" not-null="true" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="45" not-null="true" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="Direccion" length="45" not-null="true" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="Telefono" length="45" not-null="true" />
+        </property>
+        <property name="fechaNacimiento" type="string">
+            <column name="Fecha_nacimiento" length="45" not-null="true" />
+        </property>
+        <property name="EMail" type="string">
+            <column name="e_mail" length="45" not-null="true" />
+        </property>
+        <property name="tutor" type="string">
+            <column name="Tutor" length="45" />
+        </property>
+        <property name="estado" type="string">
+            <column name="Estado" length="45">
+                <comment>si es condicional o aceptado</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

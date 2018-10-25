@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/10/2018 01:21:40 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Clases.Aula" table="aula" catalog="111mil" optimistic-lock="version">
+        <id name="idAula" type="java.lang.Integer">
+            <column name="idAula" />
+            <generator class="identity" />
+        </id>
+        <property name="capacidad" type="string">
+            <column name="Capacidad" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
